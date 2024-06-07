@@ -1,0 +1,87 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+header p {
+    font-size: 0.9em;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+#caixadecor {
+    border: 2px solid black;
+    width: 854px; 
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto
+}
+
+video {
+    max-width: 100%;
+    margin-left: 73px;
+    max-height: 100%;
+    display: none;
+    position: absolute
+}
+
+aside {
+    position: fixed;
+    font-size: 1.5em;
+    bottom: 14%;
+    width: 100%;
+    text-align: center;
+}
+
+#seletor1 {
+    padding-bottom: 20px;
+}
+
+#seletor2 {
+    padding-bottom: 20px;
+}
+
+footer { 
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        padding-bottom: 9px;
+        background-color: rgb(24, 23, 23);
+        color: white;
+        text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(148, 137, 245);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

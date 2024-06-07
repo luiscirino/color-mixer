@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer!</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Color Mixer</h1>
+        <p>Um misturador de cores primárias básico.</p>
+    </header>
+    <main>
+        <form action="" method="GET">
+
+            <p id="seletor1">
+                <label for="idcor1">Escolha a primeira cor.</label>
+                <input type="color" name="cor" id="idcor1" list="presetColors" onchange="colorMixer()">
+                <datalist id="presetColors">
+                    <option value="#ff0000" id="red">Vermelho</option>
+                    <option value="#0000ff" id="blue">Azul</option>
+                    <option value="#ffff00" id="yellow">Amarelo</option>
+                </datalist>
+            </p>
+
+            <p id="seletor2">
+                <label for="idcor2">Escolha a segunda cor.</label>
+                <input type="color" name="cor" id="idcor2" list="presetColors" onchange="colorMixer()">
+            </p>
+
+            <p>
+                <output>
+                    <div id="caixadecor"></div>
+                    <video id="video" src="vids/desculpa.mp4" controls></video>
+                </output>
+            </p>
+        </form>
+    </main>
+    <aside>
+        <p id="resultado">O resultado foi a cor:</p>
+    </aside>
+    <footer>
+        <p>Criado por <a href="https://x.com/jagansaki">Pandora</a>.</p>
+    </footer>
+</body>
+</html>
